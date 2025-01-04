@@ -1,0 +1,6 @@
+# python 3.8
+numpy == 1.23
+scikit-learn
+pygame
+gym == 0.25
+pynput

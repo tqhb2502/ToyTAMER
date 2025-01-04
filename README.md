@@ -1,15 +1,13 @@
 # TAMER
-TAMER (Training an Agent Manually via Evaluative Reinforcement) is a framework for human-in-the-loop Reinforcement Learning, proposed by [Knox + Stone](http://www.cs.utexas.edu/~sniekum/classes/RLFD-F16/papers/Knox09.pdf) in 2009. 
+TAMER (Training an Agent Manually via Evaluative Reinforcement) là một framework cho phép con người đưa ra feedback cho agent trong học tăng cường, đề xuất bởi [Knox + Stone](http://www.cs.utexas.edu/~sniekum/classes/RLFD-F16/papers/Knox09.pdf) vào năm 2009.
 
-This is an implementation of a TAMER agent, converted from a standard Q-learning agent using the steps provided by Knox [here](http://www.cs.utexas.edu/users/bradknox/kcap09/Knox_and_Stone,_K-CAP_2009.html).
+Đây là mã nguồn của một TAMER agent được chuyển đổi từ Q-learning agent bằng các bước được tác giả cung cấp tại [đây](http://www.cs.utexas.edu/users/bradknox/kcap09/Knox_and_Stone,_K-CAP_2009.html). Mã nguồn này cũng được chỉnh sửa dựa trên mã nguồn gốc có thể tìm thấy tại [đây](https://github.com/benibienz/TAMER).
 
+## Chuẩn bị
+- Phiên bản Python: `3.8.20`
+- Cài đặt gói cần thiết: `pip install -r requirements.txt`
 
-
-## How to run
-You need python 3.7+ with numpy, sklearn, pygame and gym.
-
-Use run.py. You can fiddle with the config in the script.
-
-In training, watch the agent play and press 'W' to give a positive reward and 'A' to give a negative. The agent's current action is displayed.
-
-![Screenshot of TAMER](screenshot.png)
+## Chạy chương trình và huấn luyện
+- Chạy chương trình: `python run.py`
+- Huấn luyện: nhấn phím W để thưởng cho agent, nhấn phím A để phạt agent
+- Bạn có thể chọn trò chơi khác hoặc thay đổi tham số huấn luyện trong `run.py`
